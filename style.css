@@ -1,0 +1,61 @@
+body{
+  background-color: rgba(217, 200, 127, 0.949);
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(9, 9, 9);
+  margin-left: 440px;
+}
+#level-para{
+  font-weight: bolder;
+  margin-left: 10px;
+  color: red;
+}
+button{
+  padding: 5px;
+  background-color: aquamarine;
+  border-radius: 5px solid black;
+  margin-left: 440px;
+}
+#gamestatus{
+  margin-left: 440px;
+}
+.container {
+  display: flex;
+}
+
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(110, 110, 103, 0.825);
+  margin-left: 400px;
+  margin-top: 20px;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: blue;
+}
+
+
+.mini-grid {
+  margin-top:20px;
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}

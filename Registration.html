@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgba(61, 5, 61, 0.434);
+        }
+        h1{
+            text-align:center;
+            background-color: rgba(46, 5, 44, 0.555);
+            color: aliceblue;
+        }
+
+        #sb{
+           margin-left:40%; 
+           background-color: green;
+           border-radius: 5px;
+           font-size:large;
+        }
+        #rt{
+           background-color: rgb(179, 171, 26);
+           border-radius: 5px;
+           font-size: large;
+        }
+        table{
+            background-color: rgba(54, 6, 58, 0.1);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>REGISTRATION FORM</h1>
+        <form action="" method="" onsubmit="">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <table cellpadding="10px">
+                    <tr>
+                        <td><label for="name"><b>Name</b></label></td>
+                        <td><input type="text" id="name" name="user_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><b>Email</b></label></td>
+                        <td><input type="email" id="email" name="user_email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label><b>Gender</b></label></td>
+                        <td>
+                            <input type="radio" id="Male" name="user_gender" value="male" required>
+                            <label for="Male">M</label>
+                            <input type="radio" id="Female" name="user_gender" value="female" required>
+                            <label for="Female">F</label>
+                            <input type="radio" id="Other" name="user_gender" value="other" required>
+                            <label for="Other">Others</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label><b>Languages</b></label></td>
+                        <td>
+                            <input id="Telugu" type="checkbox" name="user_languages" value="Telugu">
+                            <label for="Telugu">Telugu</label>
+                            <input id="Hindi" type="checkbox" name="user_languages" value="Hindi">
+                            <label for="Hindi">Hindi</label>
+                            <input id="English" type="checkbox" name="user_languages" value="English">
+                            <label for="English">English</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="religion"><b>Religion</b></label></td>
+                        <td>
+                            <select id="religion" name="user_religion">
+                                <option value="Hindu">Hindu</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Muslim">Muslim</option>
+                                <option value="Sikh">Sikh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob"><b>DOB</b></label></td>
+                        <td><input type="date" id="dob" name="user_dateofbirth" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile"><b>Mobile-no </b></label></td>
+                        <td><input type="tel" id="mobile" pattern="[0-9]{10}" name="user_mobile_no" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address"><b>Address</b></label></td>
+                        <td><textarea id="address" rows="4" cols="36" placeholder="type here" name="user_address" ></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Educational Details</legend>
+                <table cellpadding="10px">
+                    <tr>
+                        <td><label for="10th-file"><b>10th File: </b></label></td>
+                        <td>
+                            <input type="file" id="10-file" name="user_10th_file" accept="image/png,image/jpeg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Intermediate-file"><b>Intermediate File: </b></label></td>
+                        <td>
+                            <input type="file" id="Intermediate-file" name="user_inter_file" accept="image/png,image/jpeg">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br><br>
+
+            <input id="sb" type="Submit" value="submit">
+            <input id="rt" type="reset">
+        </form>
+    </div>
+</body>
+</html>
